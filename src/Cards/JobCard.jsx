@@ -52,7 +52,7 @@ const JobCard = ({ job }) => {
 
     try {
       const response = await axios.post(
-        "https://getform.io/f/axoodnyb",
+        "https://getform.io/f/bqokkynb",
         formDataToSend,
         {
           headers: {
