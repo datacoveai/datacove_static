@@ -126,6 +126,12 @@ body {
   @apply text-center text-grayLight mt-4;
 }
 
+html,
+body {
+  overflow: auto !important;
+  height: auto !important;
+}
+
 .home-container {
   padding-left: 20%;
   padding-right: 20%;
