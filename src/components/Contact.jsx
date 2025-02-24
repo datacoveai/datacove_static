@@ -10,7 +10,9 @@ import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-
+import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
+import { MapPin } from "lucide-react";
 // 4MFf344zFLyc
 
 const Contact = () => {
@@ -119,18 +121,21 @@ const Contact = () => {
                 Contact Information
               </h3>
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6">
               <div className="flex gap-4 font-beVietnam font-bold">
-                <img src={email} alt="" />
-                <p className="text-[18px]">info@datacove.ai</p>
+                <div>
+                  <Mail />
+                </div>
+
+                <p className="text-[14px]">info@datacove.ai</p>
               </div>
 
-              <div className="flex gap-3 font-beVietnam font-bold h-14">
-                <img src={location} alt="" className="h-8 w-8" />
-                <p className="text-[14px]">
-                  08 Triveni Tower 3rd Floor, Central Avenue, GandhiPutla,
-                  Itwari, Nagpur 440002, India.
-                </p>
+              <div className="flex gap-3 font-beVietnam font-bold ">
+                <MapPin />
+                <p className="text-[14px]">357 Bay St., Toronto, ON M5H 4A6</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="h-6 w-6" /> <p>+1 9052915453</p>
               </div>
             </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import mask from "../assets/Mask.png";
 import shape from "../assets/shape.png";
 import cloud from "../assets/cloud.png";
+import { Link } from "react-router-dom";
 
 const Joinus = () => {
   return (
@@ -29,9 +30,11 @@ const Joinus = () => {
                 <br />
                 private and decentralized internet. Start for free.
               </p>
-              <button className="bg-[#5865F2] px-4 py-2 sm:px-6 sm:py-3 md:pl-6 md:pr-6 md:pt-3 md:pb-3 rounded-2xl text-[10px] sm:text-[12px] md:text-sm mt-4 md:mt-5">
-                Book A Demo
-              </button>
+              <Link to={"/contact-us"}>
+                <button className="bg-[#5865F2] px-4 py-2 sm:px-6 sm:py-3 md:pl-6 md:pr-6 md:pt-3 md:pb-3 rounded-2xl text-[10px] sm:text-[12px] md:text-sm mt-4 md:mt-5">
+                  Book A Demo
+                </button>
+              </Link>
             </div>
           </div>
         </div>

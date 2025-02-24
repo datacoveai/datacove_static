@@ -6,6 +6,7 @@ import shape from "../assets/shape.png";
 import cloud from "../assets/cloud.png";
 import hero from "../assets/hero-bg.png";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   return (
@@ -44,7 +45,7 @@ const Pricing = () => {
               background:
                 "linear-gradient(195.05deg, rgba(163, 43, 255, 0.1) 0%, rgba(248, 43, 255, 0.02) 50%, rgba(153, 43, 255, 0.06) 100%)",
             }}
-            className="w-[22rem] max-lg:w-full h-auto gap-3 rounded-3xl p-8 flex flex-col relative group"
+            className="w-[22rem] max-lg:w-full h-auto gap-3 rounded-3xl p-6 flex flex-col relative group"
           >
             <div
               className="absolute inset-0 rounded-lg border-2 opacity-0 group-hover:opacity-100 pointer-events-none"
@@ -56,7 +57,7 @@ const Pricing = () => {
                 overflow: "hidden",
               }}
             ></div>
-            <div>
+            <div className="">
               <img src={price_icon} alt="" />
             </div>
             <div>
@@ -104,7 +105,13 @@ const Pricing = () => {
               <ul className="overflow-hidden flex flex-col justify-around">
                 {item.features.map((feature, index) => (
                   <li key={index} className="flex items-start py-2 ">
-                    <img src={check} width={20} height={20} alt="Check" />
+                    <img
+                      src={check}
+                      width={20}
+                      height={20}
+                      alt="Check"
+                      className=""
+                    />
                     <p className="ml-2 text-[13px] text-opacity-80 text-[#FFFFFFCC]">
                       {feature}
                     </p>
@@ -139,9 +146,11 @@ const Pricing = () => {
                   <br />
                   own customized pricing plan
                 </p>
-                <button className="bg-[#5865F2] px-4 py-2 sm:px-6 sm:py-3 md:pl-6 md:pr-6 md:pt-3 md:pb-3 rounded-2xl text-[10px] sm:text-[12px] md:text-sm mt-4 md:mt-5">
-                  Book A Demo
-                </button>
+                <Link to={"/contact-us"}>
+                  <button className="bg-[#5865F2] px-4 py-2 sm:px-6 sm:py-3 md:pl-6 md:pr-6 md:pt-3 md:pb-3 rounded-2xl text-[10px] sm:text-[12px] md:text-sm mt-4 md:mt-5">
+                    Book A Demo
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

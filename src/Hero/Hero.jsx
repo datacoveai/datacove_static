@@ -2,6 +2,7 @@ import React from "react";
 import image from "../assets/hero-image.png";
 import hero from "../assets/hero-bg.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,11 @@ const Hero = () => {
           competition.
         </p>
 
-        <button className="bg-[#7214FF] px-4 py-2 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-[12px] mt-4 sm:mt-5 lg:mt-6">
-          Get a Demo
-        </button>
+        <Link to={"/contact-us"}>
+          <button className="bg-[#7214FF] px-4 py-2 sm:px-6 sm:py-3 rounded-2xl text-sm sm:text-[12px] mt-4 sm:mt-5 lg:mt-6">
+            Get a Demo
+          </button>
+        </Link>
       </div>
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }} // Start small and invisible
