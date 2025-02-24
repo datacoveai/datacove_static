@@ -95,7 +95,7 @@ const TermsAndCondition = () => {
                 info@datacove.ai
               </a>
             </li>
-            <li>Phone: +1 905-960-4881</li>
+            <li>Phone: +1 9052915453</li>
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ import image from "../assets/hero-image.png";
 import hero from "../assets/hero-bg.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import dashboard from "../assets/Dashboard/dashboard.webp";
 
 const Hero = () => {
   return (
@@ -30,17 +31,18 @@ const Hero = () => {
         initial={{ scale: 0.5, opacity: 0 }} // Start small and invisible
         animate={{ scale: 1, opacity: 1 }} // Grow to full size and become visible
         transition={{ duration: 0.8, ease: "easeOut" }} // Smooth effect
-        className="relative flex justify-center items-center mt-4 sm:mt-6 lg:mt-8 px-4 w-full"
+        className="relative flex justify-center items-center mt-4 sm:mt-6 lg:mt-8 px-4 max-w-7xl align-middle mx-auto"
       >
         {/* Animated Glow Effect */}
         {/* <div className="absolute w-[80%] sm:w-[60%] md:w-[70%] lg:w-[90%] h-[60%] md:h-[80%] rounded-full  opacity-50 blur-[80px] animate-pulse"></div> */}
 
         {/* Image */}
+        <div className="absolute inset-0 bg-[#150c45] blur-[25px] rounded-md"></div>
 
         <img
-          src={image}
+          src={dashboard}
           alt="AI-driven Contract Analysis"
-          className="w-[full] sm:w-[90%] md:w-[80%] lg:w-[100%] h-[full] object-cover relative"
+          className="w-full sm:w-[90%] md:w-[80%] lg:w-full h-auto object-contain relative rounded-md border border-purple/20"
         />
       </motion.div>
 
